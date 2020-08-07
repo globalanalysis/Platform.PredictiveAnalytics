@@ -12,4 +12,4 @@ pluginManagement {
 		}
 	}
 }
-rootProject.name = 'bankplatform'
+rootProject.name = 'Platform.PredictiveAnalytics'
