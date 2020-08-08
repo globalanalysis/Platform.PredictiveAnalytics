@@ -4,7 +4,23 @@ package com.platform.DataBaseObject;
  * The type Login user.
  * Базовый класс для создания пользователя в приложении
  */
-public class LoginUser {
+public final class LoginUser {
+
+    @Override
+    public String toString() {
+        return "LoginUser{" +
+                "login='" + login + '\'' +
+                ", name='" + name + '\'' +
+                ", id=" + id +
+                ", userRole='" + userrole + '\'' +
+                '}';
+    }
+
+    /**
+     * Instantiates a new Login user.
+     */
+    public LoginUser() {
+    }
 
     /**
      * Gets login.
@@ -70,10 +86,11 @@ public class LoginUser {
     /**
      * Gets user role.
      *
+     * @param name the name
      * @return the user role
      */
-    public String getUserRole() {
-        return userRole;
+    public String getUserRole(String name) {
+        return userrole;
     }
 
     /**
@@ -82,10 +99,30 @@ public class LoginUser {
      * @param userRole the user role
      */
     public void setUserRole(String userRole) {
-        this.userRole = userRole;
+        this.userrole = userrole;
     }
 
-    private String userRole;
+    public String userrole;
+
+    /**
+     * Gets pass.
+     *
+     * @return the pass
+     */
+    public String getPass() {
+        return pass;
+    }
+
+    /**
+     * Sets pass.
+     *
+     * @param pass the pass
+     */
+    public void setPass(String pass) {
+        this.pass = pass;
+    }
+
+    private String pass;
 
 
 
