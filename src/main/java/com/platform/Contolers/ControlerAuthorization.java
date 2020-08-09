@@ -65,7 +65,18 @@ public class ControlerAuthorization {
     }
 
 
+    /**
+     *  Delete юзера по id
+     */
 
+
+
+    @GetMapping("/deleteUserID")
+    public void deleteUserID() {
+
+         loginRepository.deleteUserID(7);
+
+    }
 
 
 

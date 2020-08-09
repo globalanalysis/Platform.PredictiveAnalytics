@@ -5,21 +5,45 @@ package com.platform.DataBaseObject;
  * Базовый класс для создания пользователя в приложении
  */
 public final class LoginUser {
+    private Integer id;
+    private String name;
+    private String login;
+    private String userrole;
 
-    @Override
-    public String toString() {
-        return "LoginUser{" +
-                "login='" + login + '\'' +
-                ", name='" + name + '\'' +
-                ", id=" + id +
-                ", userRole='" + userrole + '\'' +
-                '}';
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
+    public Integer getId() {
+        return id;
     }
 
     /**
-     * Instantiates a new Login user.
+     * Sets id.
+     *
+     * @param id the id
      */
-    public LoginUser() {
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
+        return name;
+    }
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
+        this.name = name;
     }
 
     /**
@@ -40,69 +64,23 @@ public final class LoginUser {
         this.login = login;
     }
 
-    private String login;
-
     /**
-     * Gets name.
+     * Gets userrole.
      *
-     * @return the name
+     * @return the userrole
      */
-    public String getName() {
-        return name;
-    }
-
-    /**
-     * Sets name.
-     *
-     * @param name the name
-     */
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    private String name;
-
-
-    /**
-     * Gets id.
-     *
-     * @return the id
-     */
-    public Integer getId() {
-        return id;
-    }
-
-    /**
-     * Sets id.
-     *
-     * @param id the id
-     */
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    private Integer id;
-
-    /**
-     * Gets user role.
-     *
-     * @param name the name
-     * @return the user role
-     */
-    public String getUserRole(String name) {
+    public String getUserrole() {
         return userrole;
     }
 
     /**
-     * Sets user role.
+     * Sets userrole.
      *
-     * @param userRole the user role
+     * @param userrole the userrole
      */
-    public void setUserRole(String userRole) {
+    public void setUserrole(String userrole) {
         this.userrole = userrole;
     }
-
-    public String userrole;
 
     /**
      * Gets pass.
@@ -123,6 +101,34 @@ public final class LoginUser {
     }
 
     private String pass;
+
+    /**
+     * Instantiates a new Login user.
+     */
+    public LoginUser() {
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
