@@ -11,11 +11,7 @@ public class ControlerWeb {
     @GetMapping("/")
     public String welcom (Model model) {
 
-        String helloBro = "Hello World";
-        model.addAttribute("helloBro", helloBro);
-
-
-        return "welcom";
+       return "welcom";
 
     }
 
