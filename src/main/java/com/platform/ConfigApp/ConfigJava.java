@@ -8,12 +8,13 @@ import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 /**
  * The type Config java.
  */
 @Configuration
-
+@EnableWebMvc
 public class ConfigJava {
 
     /**

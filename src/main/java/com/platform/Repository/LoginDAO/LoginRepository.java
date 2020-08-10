@@ -1,6 +1,8 @@
 package com.platform.Repository.LoginDAO;
 
 import com.platform.DataBaseObject.LoginUser;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
@@ -13,6 +15,8 @@ import java.util.List;
  * The type Login repository.
  */
 public class LoginRepository {
+
+
 
     /**
      * The Jdbc template object.
