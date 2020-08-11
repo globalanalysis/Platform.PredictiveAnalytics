@@ -36,7 +36,7 @@
         <h2>Документация проекта</h2>
         <thead>
         <tr>
-            <th><h3>API</h3></th>
+            <th>API</th>
             <th>Ссылка</th>
             <th>Описание и примеры</th>
         </tr>
@@ -49,18 +49,18 @@
         </tr>
         <tr>
             <td>/user</td>
-            <td>/user</td>
-            <td>Получаем весь список пользователей   <a th:href="@{/user}">/user</a></td>
+            <td><a th:href="@{/user}">/user</a></td>
+            <td>Получаем весь список пользователей   </td>
         </tr>
         <tr>
             <td>/setuser</td>
-            <td>/setuser</td>
-            <td>Создает нового юзера..Пример запроса: http://localhost:8080/setuser?name=User&userrole=admin&login=login$&pass=RTYUFSGRTER</p></td>
+            <td> <a th:href="@{/setuser?name=User&userrole=admin&login=login$&pass=pass}">/setuser</a></td>
+            <td>Создает нового юзера..Пример запроса: http://localhost:8080/setuser?name=User&userrole=admin&login=login$&pass=RTYUFSGRTER</td>
         </tr>
 
         <tr>
             <td>/getUserID</td>
-            <td>/getUserID</td>
+            <td><a th:href="@{/getUserID?id=5}">/getUserID?id=5</a></td>
             <td>Поиск юзера по id..Пример запроса: http://localhost:8080/getUserID?id=4</td>
         </tr>
 
@@ -82,4 +82,3 @@
 
 
 </body>
-</html>
