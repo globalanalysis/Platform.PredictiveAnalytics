@@ -1,4 +1,4 @@
-package com.platform.Contolers;
+package com.platform.Contolers.RestControler;
 
 
 import com.platform.Application;
