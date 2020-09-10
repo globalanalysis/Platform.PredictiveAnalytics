@@ -18,6 +18,7 @@ import java.util.List;
  * ControlerAuthorization
  * Основной контролер, служит для авторизации пользователей
  * http://localhost:8080/
+ * @author Manul
  */
 @RestController
 public class ControlerAuthorization {
